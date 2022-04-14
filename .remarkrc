@@ -1,5 +1,6 @@
 {
   "plugins": [
+    "remark-gfm",
     ["remark-lint-strikethrough-marker", "~~"]
   ]
 }
