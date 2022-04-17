@@ -31,3 +31,11 @@ jobs:
 
       - name: Run Remark
         run: remark . --frail
+
+      - name: Run Remark with fixing
+        if: ${{ failure() }}
+        run: remark . --frail --rc-path ./.remarkrcfix
+
+      - name: Show git diff
+        if: ${{ always() }}
+        run: git diff --color --color-moved
