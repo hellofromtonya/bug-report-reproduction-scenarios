@@ -1,0 +1,33 @@
+name: Remark
+
+on:
+  push:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up node and enable caching of dependencies
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Show version info
+        run: |
+          npm --version
+          node --version
+
+      - name: Install Remark-CLI
+        run: npm install --global remark-cli
+
+      - name: Install Remark linting rules
+        run: >
+          npm install
+          remark-lint
+          remark-changelog
+
+      - name: Run Remark
+        run: remark . --frail

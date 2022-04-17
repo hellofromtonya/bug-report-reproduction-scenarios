@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    ["remark-changelog",
+      {
+        "repository": "https://github.com/jrfnl/bug-report-reproduction-scenarios"
+      }
+    ]
+  ]
+}
