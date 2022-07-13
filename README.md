@@ -1,5 +1,7 @@
 # Bug Report Reproduction Scenarios
 
-This repository contains reproduction scenarios for various bugs I've found and reported.
+## Setup-php PHP 8.2 / GD extension missing
 
-There's nothing of significance in the `main` branch, but for each (open) bug report, there will be a separate branch which can be checked out to reproduce the specific issue reported.
+### How to reproduce
+
+Examine the results of the workflows runs for this branch on the [Actions](https://github.com/jrfnl/bug-report-reproduction-scenarios/actions) page.
