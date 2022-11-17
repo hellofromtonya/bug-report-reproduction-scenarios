@@ -1,5 +1,15 @@
 # Bug Report Reproduction Scenarios
 
-This repository contains reproduction scenarios for various bugs I've found and reported.
+## Mockery overlad implementation question
 
-There's nothing of significance in the `main` branch, but for each (open) bug report, there will be a separate branch which can be checked out to reproduce the specific issue reported.
+### Description
+
+....
+
+### How to reproduce
+
+* Check out this branch
+* Run `composer install`
+* Run `vendor/bin/phpunit`
+
+Or examine the results of the workflows runs for this branch on the [Actions](https://github.com/jrfnl/bug-report-reproduction-scenarios/actions) page.
