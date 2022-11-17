@@ -1,10 +1,6 @@
 <?php
 
-namespace Jrf\Mockery\Scenario\Tests;
-
-use Mockery;
 use Mockery\Adapter\Phpunit\MockeryTestCase;
-use SomeClass;
 
 class ExampleTest extends MockeryTestCase {
 	public function test_overload() {

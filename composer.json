@@ -7,13 +7,8 @@
         "mockery/mockery": "^1.5.1"
     },
     "autoload": {
-        "psr-4": {
-            "Jrf\\Mockery\\Scenario\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Jrf\\Mockery\\Scenario\\Tests\\": "tests/"
-        }
+        "classmap": [
+            "src/"
+        ]
     }
 }
