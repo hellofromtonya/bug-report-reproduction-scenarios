@@ -20,8 +20,9 @@ class ExampleTest extends MockeryTestCase {
 	}
 
 	public function test_second_overload_expectations_are_ignored() {
-		$overload = Mockery::mock( 'overload:SomeClass' );
+		$overload = Mockery::mock( 'overload:SomeClass' ); // I would expect a fatal here as per the documentation
 		$overload->expects( 'doThing' )->once();
+
 		$overload2 = Mockery::mock( 'overload:SomeClass' ); // I would expect a fatal here as per the documentation.
 		$overload2->expects( 'doThing' )->twice();
 
@@ -30,7 +31,7 @@ class ExampleTest extends MockeryTestCase {
 	}
 
 	public function test_second_overload_mocked_methods_are_ignored() {
-		$overload = Mockery::mock( 'overload:SomeClass' );
+		$overload = Mockery::mock( 'overload:SomeClass' ); // I would expect a fatal here as per the documentation
 		$overload->expects( 'doThing' )->once();
 
 		$instance = new SomeClass();
