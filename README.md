@@ -1,5 +1,16 @@
 # Bug Report Reproduction Scenarios
 
-This repository contains reproduction scenarios for various bugs I've found and reported.
+## PHP Code Coverage "coverage is recorded for test with invalid covers tag"
 
-There's nothing of significance in the `main` branch, but for each (open) bug report, there will be a separate branch which can be checked out to reproduce the specific issue reported.
+### Description
+
+See issue https://github.com/sebastianbergmann/php-code-coverage/issues/997
+
+
+### How to reproduce
+
+* Check out this branch
+* Run `composer install`
+* Run `vendor/bin/phpunit` with code coverage on against the various commits in the branch
+
+Or just examine the committed coverage HTML reports/CLI output in the commit messages for each step.
