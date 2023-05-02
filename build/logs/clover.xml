@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1683064823">
-  <project timestamp="1683064823">
+<coverage generated="1683064979">
+  <project timestamp="1683064979">
     <file name="D:\000_GitHub\_TEMP\bug-report-reproduction-scenarios\src\Foo.php">
       <class name="Jrf\CodeCoverage\Scenario\Foo" namespace="global">
         <metrics complexity="5" methods="5" coveredmethods="0" conditionals="5" coveredconditionals="0" statements="5" coveredstatements="0" elements="15" coveredelements="0"/>

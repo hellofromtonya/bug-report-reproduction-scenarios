@@ -8,6 +8,9 @@ use PHPUnit\Framework\TestCase;
 class FooTest extends TestCase
 {
 
+    /**
+     * @covers \Jrf\CodeCoverage\Scenario\Foo::methodE
+     */
     public function testMethodAB() {
         $this->assertTrue((new Foo)->methodA());
     }
