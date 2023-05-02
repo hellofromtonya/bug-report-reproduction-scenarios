@@ -11,6 +11,7 @@ class FooTest extends TestCase
     /**
      * @covers \Jrf\CodeCoverage\Scenario\Foo::methodA
      * @covers \Jrf\CodeCoverage\Scenario\Foo::methodB
+     * @covers \Jrf\CodeCoverage\Scenario\Foo::methodDoesNotExist
      */
     public function testMethodAB() {
         $this->assertTrue((new Foo)->methodA());
